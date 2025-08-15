@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam - MCQ Exam Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <header>
+         <nav>
+            <div class="logo"><a href="index.html">ExamPro</a></div>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="exam-container">
+        <div class="exam-header">
+            <h2>General Knowledge Exam</h2>
+            <div id="timer">Time Left: 10:00</div>
+        </div>
+
+        <div class="question-wrapper">
+            <h3 id="question-number">Question 1/10</h3>
+            <p id="question-text">What is the capital of Bangladesh?</p>
+        </div>
+
+        <form id="exam-form" class="options-wrapper">
+            <label class="option">
+                <input type="radio" name="answer" value="A">
+                <span class="option-text">Chittagong</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="B">
+                <span class="option-text">Dhaka</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="C">
+                <span class="option-text">Sylhet</span>
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="D">
+                <span class="option-text">Mymensingh</span>
+            </label>
+        </form>
+
+        <div class="exam-navigation">
+            <button id="next-btn" class="cta-button">Next Question</button>
+            <button id="submit-btn" class="cta-button" style="display:none;">Submit Exam</button>
+        </div>
+    </main>
+
+    <script src="js/exam.js"></script>
+</body>
+</html>
