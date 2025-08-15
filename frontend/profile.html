@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - MCQ Exam Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">ExamPro</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exam.html">Exams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <h1>My Profile</h1>
+        <div class="user-details">
+            <p><strong>Name:</strong> <span id="user-name">Your Name</span></p>
+            <p><strong>Mobile:</strong> <span id="user-mobile">+8801xxxxxxxxx</span></p>
+        </div>
+
+        <h2>Past Exam Results</h2>
+        <div class="results-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Exam Name</th>
+                        <th>Score</th>
+                        <th>Date Taken</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <tr>
+                        <td>General Knowledge</td>
+                        <td>8 / 10</td>
+                        <td>15-Aug-2025</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Science</td>
+                        <td>7 / 10</td>
+                        <td>10-Aug-2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="js/profile.js"></script>
+</body>
+</html>
