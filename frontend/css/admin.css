@@ -1,1 +1,76 @@
+/* --- Admin Specific Styles --- */
+
+/* Override dark theme for a cleaner, light admin panel */
+body {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.admin-header, .admin-login-container header {
+    background: #fff;
+    color: #333;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: none;
+    text-align: center;
+}
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin-header nav a {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+.admin-container, .admin-login-container .form-wrapper {
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 800px; /* Wider for tables */
+}
+
+.admin-login-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-login-container .form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Form inputs for light theme */
+.admin-container .input-group input,
+.admin-container .input-group textarea,
+.admin-container .input-group select,
+.admin-login-container .input-group input {
+    background-color: #f4f7f9;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.admin-container .input-group label,
+.admin-login-container .input-group label {
+    color: #555;
+    font-weight: 600;
+}
+
+/* Table styles for admin */
+.results-table th {
+    background-color: #eef2f5;
+    color: #333;
+}
+.results-table td {
+    border-color: #eef2f5;
+}
+.results-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+.results-table tbody tr:hover {
+    background-color: #f0f4f7;
+}
 
