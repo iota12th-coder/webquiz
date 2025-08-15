@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="dashboard.html">View Results</a>
+            <a href="add-question.html">Add Question</a>
+            <a href="#">Logout</a>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <h2>Recent User Results</h2>
+        <div class="results-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Mobile Number</th>
+                        <th>Exam Name</th>
+                        <th>Score</th>
+                        <th>Date Taken</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-results-body">
+                    <!-- JavaScript will populate this table with data from the backend -->
+                    <tr>
+                        <td>Test User One</td>
+                        <td>+8801711111111</td>
+                        <td>General Knowledge</td>
+                        <td>8 / 10</td>
+                        <td>15-Aug-2025</td>
+                    </tr>
+                     <tr>
+                        <td>Test User Two</td>
+                        <td>+8801822222222</td>
+                        <td>Basic Science</td>
+                        <td>7 / 10</td>
+                        <td>14-Aug-2025</td>
+                    </tr>
+                     <tr>
+                        <td>Test User Three</td>
+                        <td>+8801933333333</td>
+                        <td>General Knowledge</td>
+                        <td>5 / 10</td>
+                        <td>14-Aug-2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
 
